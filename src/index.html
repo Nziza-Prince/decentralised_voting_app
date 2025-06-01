@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decentralized Voting Platform</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🗳️ Decentralized Voting Platform</h1>
+      <p>Secure, transparent, and immutable voting on the blockchain</p>
+    </div>
+
+    <div class="card">
+      <div class="connection-status">
+        <div class="account-info">
+          <div class="status-indicator" id="statusIndicator"></div>
+          <div>
+            <strong>Wallet Status:</strong>
+            <div class="account-address" id="account">Not connected</div>
+          </div>
+        </div>
+        <button class="connect-btn" id="connectBtn" onclick="connectMetaMask()">
+          Connect MetaMask
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="candidates-section">
+        <h2>🏆 Candidates</h2>
+        <div class="loading" id="loading">
+          <div class="spinner"></div>
+          <p>Loading candidates...</p>
+        </div>
+        <div class="candidates-grid" id="candidates"></div>
+        <div class="empty-state" id="emptyState" style="display: none;">
+          <h3>No candidates available</h3>
+          <p>Please connect your wallet to view candidates</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notification" id="notification"></div>
+
+  <script src="app.js">
+    
+  </script>
+</body>
+</html>
