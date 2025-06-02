@@ -1,4 +1,4 @@
-const contractAddress = "0xBC1AD346FF480b962f59322aa00E0985c3B8057a";
+const contractAddress = "0x0d2BE6560795DC11B8170Df480753F9C4710a396";
     let contractABI;
     let web3;
     let votingContract;
